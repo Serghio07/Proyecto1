@@ -1,0 +1,382 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 2px;
+}
+
+/* Banner */
+.banner {
+    background: url("/img/portada.jpg") no-repeat center center/cover;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content {
+    color: #fff;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.banner-content span {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.banner-content h1 {
+    margin-bottom: 10px;
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.banner-content p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+
+.banner-content a.btn-one {
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid #fff;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.banner-content a.btn-one:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Nosotros */
+.nosotros {
+    padding: 130px 0 90px 0;
+    background-color: #fff;
+}
+
+.imagen-acerca-de {
+    max-width: 60%; 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin: 0 auto; 
+}
+
+.imagen-acerca-de img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; 
+    object-fit: cover;
+}
+
+.titulo-pagina {
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #000;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+}
+
+.titulo-pagina p {
+    color: #2a2a2c;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.leer-mas {
+    display: inline-block;
+    margin-top: 44px;
+    padding: 10px 20px;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.leer-mas:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* Ajustes responsivos */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.col-md-5, .col-md-7 {
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .banner-content {
+        padding-top: 100px;
+        width: 100%;
+    }
+
+    .imagen-acerca-de {
+        margin-left: 0;
+    }
+
+    .titulo-pagina {
+        margin-right: 0;
+    }
+}
+
+/* Productos */
+.glasses {
+    background: #fff;
+    margin-top: 90px;
+    padding: 0 15px;
+}
+
+.glasses .titlepage {
+    padding-bottom: 60px;
+}
+
+.glasses .titlepage h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.glasses .titlepage p {
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.blu {
+    color: #ed1c46;
+    text-transform: initial;
+}
+
+.glasses .glasses_box {
+    text-align: center;
+    border: 1px solid #555556;
+    border-radius: 2px;
+    padding: 120px 0 30px;
+    margin-bottom: 30px;
+}
+
+.glasses .glasses_box figure {
+    margin: 0;
+}
+
+.glasses .glasses_box h3 {
+    color: #100d0d;
+    font-size: 22px;
+    line-height: 20px;
+    padding: 70px 0 9px;
+}
+
+.glasses .glasses_box p {
+    color: #2a2a2c;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.glasses .vermas {
+    display: inline-block;
+    margin-top: 44px;
+    padding: 10px 20px;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.glasses .vermas:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+
+
+
+/* Footer */
+footer {
+    background-color: #d4aaaa;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h1, 
+.footer-section h2, 
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social-media li {
+    margin-right: 10px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+.bottom-bar {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    margin-top: 20px;
+}
+
+.bottom-bar p {
+    margin: 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsive  */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+}
