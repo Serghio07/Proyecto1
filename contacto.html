@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/contacto.css">
+    <title>Contactos</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src='/img/feliz-sonriente-cara-cuadrada-emoticon-con-gafas-de-sol.png' alt='Logo de Óptica Ubecito'>
+            <h1>Óptica Ubecito</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/productos.html">Productos</a></li>
+                <li><a href="/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div class="contact_form">
+        <div class="formulario">
+            <h1>Formulario de Contacto</h1>
+            <h3>Escríbenos y en breve nos pondremos en contacto contigo</h3>
+    
+            <form action="submeter-formulario.php" method="post">
+                <div class="form-group">
+                    <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Escribe tu nombre">
+                </div>
+    
+                <div class="form-group">
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="email" id="email" required placeholder="Escribe tu Email">
+                </div>
+    
+                <div class="form-group">
+                    <label for="telefono" class="colocar_telefono">Teléfono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </div>
+    
+                <div class="form-group">
+                    <label for="website" class="colocar_website">Sitio web</label>
+                    <input type="url" name="website" id="website" placeholder="Escribe la URL de tu web">
+                </div>
+    
+                <div class="form-group">
+                    <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="asunto" id="asunto" required placeholder="Escribe un asunto">
+                </div>
+    
+                <div class="form-group">
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="mensaje" class="texto_mensaje" id="mensaje" required placeholder="Deja aquí tu comentario..."></textarea>
+                </div>
+    
+                <button type="submit" name="enviar_formulario" id="enviar">Enviar</button>
+    
+                <p class="aviso">
+                    <span class="obligatorio">*</span> Los campos son obligatorios.
+                </p>
+            </form>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h1>Contáctanos</h1>
+                <p>Email: <a href="mailto:sergio.ticona@ucb.edu.bo">sergio.ticona@ucb.edu.bo</a></p>
+                <p>Teléfono: <a href="tel:+59162295637">62295637</a></p>
+                <p>Universidad Católica Boliviana</p>
+            </div>
+            <div class="footer-section">
+                <h2>Links Directos</h2>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <ul class="social-media">
+                    <li><a href="#"><img src="img/facebook.png" alt="Facebook" class="social-icon"></a></li>
+                    <li><a href="#"><img src="img/instagram.png" alt="Instagram" class="social-icon"></a></li>
+                    <li><a href="#"><img src="img/social.png" alt="Social" class="social-icon"></a></li>
+                    <li><a href="#"><img src="img/tik-tok.png" alt="TikTok" class="social-icon"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 Ubecito. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
